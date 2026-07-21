@@ -930,6 +930,16 @@
                 visibility: visible !important;
                 opacity: 1 !important;
             }
+            .nav-links::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #000000;
+                z-index: -1;
+            }
             .nav-links a {
                 font-size: 0.8rem;
                 letter-spacing: 0.25em;
