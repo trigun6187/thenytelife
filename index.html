@@ -189,7 +189,8 @@
             flex-direction: column;
             gap: 6px;
             cursor: pointer;
-            z-index: 1001;
+            z-index: 3000;
+            position: relative;
         }
 
         .hamburger span {
@@ -916,9 +917,12 @@
                 gap: 2.5rem;
                 z-index: 2000;
                 padding: 0;
+                opacity: 0;
+                transition: opacity 0.3s ease;
             }
             .nav-links.active {
                 display: flex;
+                opacity: 1;
             }
             .nav-links a {
                 font-size: 0.8rem;
