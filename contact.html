@@ -33,17 +33,17 @@
 
     <style>
         .host-card {
-            text-align: center;
-            padding: 3rem;
+            text-align: left;
+            padding: 2.5rem;
             background: var(--card);
             border: 1px solid var(--border);
         }
 
         .host-card i {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--accent);
-            margin-bottom: 1.5rem;
-            opacity: 0.7;
+            margin-bottom: 1.2rem;
+            display: block;
         }
 
         .host-card h3 {
@@ -52,47 +52,73 @@
             margin-bottom: 1rem;
             font-weight: 400;
             text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
 
         .host-card p {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             line-height: 1.8;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
         }
 
         .host-card a {
             color: var(--accent);
             text-decoration: none;
             transition: color 0.3s ease;
+            font-size: 0.9rem;
         }
 
         .host-card a:hover {
             color: var(--gold-dark);
         }
 
-        .host-card ul {
-            list-style: none;
-            margin-top: 1.5rem;
+        .host-card.full {
+            max-width: 900px;
+            margin: 0 auto 2rem;
         }
 
-        .host-card ul li {
-            padding: 0.5rem 0;
-            display: flex;
+        .host-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .payment-btn {
+            display: inline-flex;
             align-items: center;
-            gap: 0.8rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            min-width: 200px;
         }
 
-        .host-card ul li i {
-            color: var(--accent);
-            font-size: 0.7rem;
+        .payment-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .payment-btn.cashapp {
+            background: #00D632;
+            color: #fff;
+        }
+
+        .payment-btn.zelle {
+            background: #6C1FD3;
+            color: #fff;
         }
 
         @media (max-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 1fr !important;
+            .host-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -132,10 +158,10 @@
             <h2>Your Path to The Nyte Life</h2>
             <div class="gold-line"></div>
         </div>
-        <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 2rem; max-width: 900px; margin: 0 auto;">
+        <div class="host-grid">
             <div class="host-card fade-in">
-                <i class="fas fa-users" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
-                <h3 style="color: var(--text);">Already on FetLife?</h3>
+                <i class="fas fa-users"></i>
+                <h3>Already on FetLife?</h3>
                 <p>Priority access is given to those with active FetLife accounts. Message us directly and we'll get you set up.</p>
                 <div style="margin-top: 1.5rem;">
                     <a href="https://fetlife.com/Mr-Nyte" target="_blank" class="btn-primary" style="margin: 0.25rem;">
@@ -147,11 +173,11 @@
                 </div>
             </div>
             <div class="host-card fade-in">
-                <i class="fas fa-question-circle" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
-                <h3 style="color: var(--text);">New to This?</h3>
+                <i class="fas fa-question-circle"></i>
+                <h3>New to This?</h3>
                 <p>No worries. We'll walk you through everything. Message Mr. Nyte on Telegram and we'll answer all your questions.</p>
                 <div style="margin-top: 1.5rem;">
-                    <a href="https://t.me/MrNyte" target="_blank" class="btn-primary" style="margin: 0.25rem;">
+                    <a href="https://t.me/MrNyte" target="_blank" class="btn-primary">
                         <i class="fab fa-telegram"></i> Message @MrNyte
                     </a>
                 </div>
@@ -168,10 +194,10 @@
             <div class="gold-line"></div>
         </div>
 
-        <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 2rem; max-width: 900px; margin: 0 auto;">
+        <div class="host-grid">
             <div class="host-card fade-in">
-                <i class="fab fa-telegram" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
-                <h3 style="color: var(--text);">Telegram</h3>
+                <i class="fab fa-telegram"></i>
+                <h3>Telegram</h3>
                 <p>Fastest way to reach us. Message Mr. Nyte directly for questions, RSVPs, or just to say hi.</p>
                 <div style="margin-top: 1.5rem;">
                     <a href="https://t.me/MrNyte" target="_blank" class="btn-primary">
@@ -181,8 +207,8 @@
             </div>
 
             <div class="host-card fade-in">
-                <i class="fas fa-users" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
-                <h3 style="color: var(--text);">FetLife</h3>
+                <i class="fas fa-users"></i>
+                <h3>FetLife</h3>
                 <p>Join our FetLife group for event announcements, discussions, and community updates.</p>
                 <div style="margin-top: 1.5rem;">
                     <a href="https://fetlife.com/groups/320616" target="_blank" class="btn-primary">
@@ -203,19 +229,16 @@
             <div class="gold-line"></div>
         </div>
 
-        <div class="host-card fade-in">
-            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; justify-content: center;">
-                <a href="https://cash.app/$DarkAngelJ87" target="_blank" class="btn-primary" style="background: #00D632; min-width: auto;">
+        <div class="host-card full">
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;">
+                <a href="https://cash.app/$DarkAngelJ87" target="_blank" class="payment-btn cashapp">
                     <i class="fas fa-dollar-sign"></i> Pay with CashApp
                 </a>
-                <a href="https://venmo.com/u/Boogie_Nytes" target="_blank" class="btn-primary" style="background: #3D95CE; min-width: auto;">
-                    <i class="fas fa-wallet"></i> Pay with Venmo
+                <a href="https://venmo.com/u/Boogie_Nytes" target="_blank" class="payment-btn zelle">
+                    <i class="fas fa-wallet"></i> Pay with Zelle
                 </a>
             </div>
-            <ul>
-                <li><i class="fas fa-university"></i> <div><strong style="color: var(--text);">Zelle</strong> — DM DarkAngel on FetLife</div></li>
-            </ul>
-            <p style="margin-top: 1.5rem; color: var(--text-muted);">Payment confirms your spot. No refunds within 24 hours of the event.</p>
+            <p style="text-align: center; margin: 0; color: var(--text-muted);">Payment confirms your spot. No refunds within 24 hours of the event.</p>
         </div>
     </section>
 
