@@ -73,6 +73,11 @@
             color: var(--gold-dark);
         }
 
+        .host-card.full {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
         .host-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -82,7 +87,12 @@
         }
 
         @media (max-width: 768px) {
-            .host-grid {
+            .host-card.full {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .host-grid {
                 grid-template-columns: 1fr;
             }
         }
