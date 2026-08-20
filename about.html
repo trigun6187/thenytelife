@@ -59,6 +59,26 @@
             line-height: 1.8;
             margin-bottom: 1rem;
         }
+
+        .host-card.full {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .host-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+
+        @media (max-width: 768px) {
+            .host-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -91,14 +111,14 @@
 
     <!-- STORY -->
     <section>
-        <div class="host-card fade-in">
+        <div class="host-card fade-in full">
             <h3>Our Story</h3>
             <p>The Nyte Life was born from a simple idea: create a safe, inclusive space where kinksters of every kind can play without judgment.</p>
             <p>Founded in 2025 on Long Island, New York, we started as a small gathering of like-minded adults who wanted more than what the mainstream scene offered. We wanted intimacy, discretion, and a community that truly understood the lifestyle.</p>
             <p>What started as private gatherings quickly grew into something bigger. Today, The Nyte Life hosts regular events across Long Island and NYC, bringing together a vetted community of open-minded adults who share a passion for exploration and connection.</p>
         </div>
 
-        <div class="host-card fade-in">
+        <div class="host-card fade-in full">
             <h3>What We Believe</h3>
             <p>We believe everyone deserves a space where they can be their authentic selves. Whether you're experienced in the lifestyle or just curious, The Nyte Life welcomes you with open arms.</p>
             <p>Our events are curated to provide the ultimate experience: private venues, premium amenities, and a crowd that's been carefully vetted for safety and respect.</p>
@@ -115,6 +135,7 @@
             <div class="gold-line"></div>
         </div>
 
+        <div class="host-grid">
         <div class="host-card fade-in">
             <h3><i class="fas fa-mask" style="color: var(--accent); margin-right: 0.5rem;"></i> Mr. Nyte</h3>
             <p>Co-founder and co-host of The Nyte Life. Mr. Nyte handles the business side of things: event logistics, venue sourcing, security, and creating safe spaces for everyone to explore their fantasies.</p>
@@ -128,6 +149,7 @@
             <p>As co-founder, Dark Angel has quickly become a fan favorite. Her events are known for their incredible atmosphere, thoughtful details, and the special touch she brings to every party.</p>
             <p>Connect with Dark Angel on <a href="https://fetlife.com/DarkAngelj87" target="_blank" style="color: var(--accent);">FetLife</a>.</p>
         </div>
+        </div>
     </section>
 
     <!-- WHAT MAKES US DIFFERENT -->
@@ -139,7 +161,7 @@
             <div class="gold-line"></div>
         </div>
 
-        <div class="host-card fade-in">
+        <div class="host-card fade-in full">
             <ul>
                 <li><i class="fas fa-shield-alt"></i> <div><strong style="color: var(--text);">Security at Every Event</strong> — Professional security ensures everyone feels safe. No exceptions.</div></li>
                 <li><i class="fas fa-check-circle"></i> <div><strong style="color: var(--text);">Vetted Guests Only</strong> — Every attendee is verified. No randoms. No tourists. Just real people.</div></li>
