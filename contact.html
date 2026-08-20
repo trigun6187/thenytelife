@@ -86,40 +86,6 @@
             margin: 0 auto;
         }
 
-        .payment-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
-            font-size: 0.85rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            min-width: 200px;
-        }
-
-        .payment-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .payment-btn.cashapp {
-            background: #00D632;
-            color: #fff;
-        }
-
-        .payment-btn.venmo {
-            background: #3D95CE;
-            color: #fff;
-        }
-
-        .payment-btn.zelle {
-            background: #6C1FD3;
-            color: #fff;
-        }
 
         @media (max-width: 768px) {
             .host-grid {
@@ -235,16 +201,16 @@
         </div>
 
         <div class="host-card full">
-            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem;">
-                <a href="https://cash.app/$DarkAngelJ87" target="_blank" class="payment-btn cashapp">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 1rem;">
+                <a href="https://cash.app/$DarkAngelJ87" target="_blank" class="btn-primary" style="background: #00D632; min-width: auto; font-size: 0.75rem;">
                     <i class="fas fa-dollar-sign"></i> Pay with CashApp
                 </a>
-                <a href="https://venmo.com/u/Boogie_Nytes" target="_blank" class="payment-btn venmo">
+                <a href="https://venmo.com/u/Boogie_Nytes" target="_blank" class="btn-primary" style="background: #3D95CE; min-width: auto; font-size: 0.75rem;">
                     <i class="fas fa-wallet"></i> Pay with Venmo
                 </a>
             </div>
-            <p style="text-align: center; margin: 0; color: var(--text-muted);"><i class="fas fa-university" style="color: var(--accent); margin-right: 0.5rem;"></i> <strong>Zelle</strong> — DM DarkAngel on FetLife</p>
-            <p style="text-align: center; margin: 0; color: var(--text-muted);">Payment confirms your spot. No refunds within 24 hours of the event.</p>
+            <p style="text-align: center; margin: 0; font-size: 0.85rem; color: var(--text-muted);">Zelle: DM DarkAngel</p>
+            <p style="text-align: center; margin-top: 1rem; color: var(--text-muted);">Payment confirms your spot. No refunds within 24 hours of the event.</p>
         </div>
     </section>
 
