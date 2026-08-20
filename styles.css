@@ -288,6 +288,8 @@ section {
     max-width: 900px;
     margin: 0 auto 2rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-card h3 {
@@ -314,6 +316,7 @@ section {
     font-size: 1rem;
     line-height: 1.9;
     margin-bottom: 1rem;
+    flex: 1;
 }
 
 .content-card ul {
