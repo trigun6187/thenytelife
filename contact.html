@@ -32,99 +32,43 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        .contact-method {
-            background: var(--card);
-            border: 1px solid var(--border);
+        .host-card {
+            text-align: center;
             padding: 3rem;
-            max-width: 900px;
-            margin: 0 auto 2rem;
-            text-align: center;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .contact-method:hover {
-            border-color: rgba(212, 175, 55, 0.3);
-            transform: translateY(-4px);
-        }
-
-        .contact-method i {
-            font-size: 2.5rem;
-            color: var(--accent);
-            margin-bottom: 1.5rem;
-            opacity: 0.8;
-        }
-
-        .contact-method h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-
-        .contact-method p {
-            color: var(--text-muted);
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-method a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .two-path {
             background: var(--card);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            padding: 4rem;
-            max-width: 900px;
-            margin: 0 auto 2rem;
-        }
-
-        .two-path h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            text-align: center;
-            color: var(--accent);
-        }
-
-        .path-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .path-option {
-            padding: 2rem;
-            background: var(--bg);
             border: 1px solid var(--border);
         }
 
-        .path-option h4 {
+        .host-card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            opacity: 0.7;
+        }
+
+        .host-card h3 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
             font-weight: 400;
             text-transform: uppercase;
-            color: var(--accent);
         }
 
-        .path-option p {
+        .host-card p {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 1.8;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
-        .path-option .btn-primary,
-        .path-option .btn-outline {
-            min-width: auto;
-            font-size: 0.75rem;
+        .host-card a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .host-card a:hover {
+            color: var(--gold-dark);
         }
 
         @media (max-width: 768px) {
@@ -169,7 +113,7 @@
             <div class="gold-line"></div>
         </div>
         <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 2rem; max-width: 900px; margin: 0 auto;">
-            <div class="content-card fade-in" style="text-align: center; margin: 0; width: 100%;">
+            <div class="host-card fade-in">
                 <i class="fas fa-users" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
                 <h3 style="color: var(--text);">Already on FetLife?</h3>
                 <p>Priority access is given to those with active FetLife accounts. Message us directly and we'll get you set up.</p>
@@ -182,7 +126,7 @@
                     </a>
                 </div>
             </div>
-            <div class="content-card fade-in" style="text-align: center; margin: 0; width: 100%;">
+            <div class="host-card fade-in">
                 <i class="fas fa-question-circle" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
                 <h3 style="color: var(--text);">New to This?</h3>
                 <p>No worries. We'll walk you through everything. Message Mr. Nyte on Telegram and we'll answer all your questions.</p>
@@ -205,7 +149,7 @@
         </div>
 
         <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; gap: 2rem; max-width: 900px; margin: 0 auto;">
-            <div class="content-card fade-in" style="text-align: center;">
+            <div class="host-card fade-in">
                 <i class="fab fa-telegram" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
                 <h3 style="color: var(--text);">Telegram</h3>
                 <p>Fastest way to reach us. Message Mr. Nyte directly for questions, RSVPs, or just to say hi.</p>
@@ -216,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="content-card fade-in" style="text-align: center;">
+            <div class="host-card fade-in">
                 <i class="fas fa-users" style="font-size: 2rem; color: var(--accent); margin-bottom: 1.5rem; opacity: 0.7;"></i>
                 <h3 style="color: var(--text);">FetLife</h3>
                 <p>Join our FetLife group for event announcements, discussions, and community updates.</p>
@@ -239,7 +183,7 @@
             <div class="gold-line"></div>
         </div>
 
-        <div class="content-card fade-in">
+        <div class="host-card fade-in">
             <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
                 <a href="https://cash.app/$DarkAngelJ87" target="_blank" class="btn-primary" style="background: #00D632; min-width: auto;">
                     <i class="fab fa-cash-app"></i> Pay with CashApp
