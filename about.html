@@ -105,6 +105,58 @@
                 grid-template-columns: 1fr;
             }
         }
+    
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem 4rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.3rem;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .feature-content h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .feature-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -185,19 +237,70 @@
             <div class="gold-line"></div>
         </div>
 
-        <div class="host-card fade-in full">
-            <ul>
-                <li><i class="fas fa-shield-alt"></i> <div><strong style="color: var(--text);">Security at Every Event</strong> — Professional security ensures everyone feels safe. No exceptions.</div></li>
-                <li><i class="fas fa-check-circle"></i> <div><strong style="color: var(--text);">Vetted Guests Only</strong> — Every attendee is verified. No randoms. No tourists. Just real people.</div></li>
-                <li><i class="fas fa-map-marker-alt"></i> <div><strong style="color: var(--text);">Private Venues</strong> — Multiple playrooms, premium amenities, and locations you won't find anywhere else.</div></li>
-                <li><i class="fas fa-heart"></i> <div><strong style="color: var(--text);">Inclusive Community</strong> — All kinks, all genders, all orientations. If you're respectful, you're welcome.</div></li>
-                <li><i class="fas fa-glass-cheers"></i> <div><strong style="color: var(--text);">Full Experience</strong> — Snacks, drinks, 420 products, music, and more. We handle the details so you can enjoy.</div></li>
-                <li><i class="fas fa-hand-holding-heart"></i> <div><strong style="color: var(--text);">Ladies Always Free</strong> — Women attend every event for free. Always.</div></li>
-            </ul>
+        <div class="features-grid">
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Security at Every Event</h4>
+                    <p>Professional security ensures everyone feels safe. No exceptions.</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Vetted Guests Only</h4>
+                    <p>Every attendee is verified. No randoms. No tourists. Just real people.</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Private Venues</h4>
+                    <p>Multiple playrooms, premium amenities, and locations you won't find anywhere else.</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Inclusive Community</h4>
+                    <p>All kinks, all genders, all orientations. If you're respectful, you're welcome.</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Full Experience</h4>
+                    <p>Snacks, drinks, 420 products, music, and more. We handle the details so you can enjoy.</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-venus"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Ladies Always Free</h4>
+                    <p>Women attend every event for free. Always.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CTA -->
+<!-- CTA -->
     <section class="cta-section">
         <div class="section-header">
             <h2>Ready to Experience The Nyte Life?</h2>
