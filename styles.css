@@ -649,6 +649,17 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+    .footer-brand {
+        text-align: left;
+    }
+    .footer-brand p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+    .footer-brand a {
+        display: block;
+        padding: 0.3rem 0;
+    }
     .page-hero {
         min-height: 30vh;
         padding-top: 8rem;
