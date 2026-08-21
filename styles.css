@@ -653,6 +653,13 @@ footer {
         min-height: 30vh;
         padding-top: 8rem;
     }
+    .payment-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .payment-buttons a {
+        width: 100%;
+    }
 }
 
 /* ===== ANIMATIONS ===== */
