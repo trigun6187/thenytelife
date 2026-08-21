@@ -230,7 +230,7 @@ body::before {
 
 .page-hero p {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: #ccc;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.8;
