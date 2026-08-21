@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Join | The Nyte Life</title>
-    <meta name="description" content="Ready to join The Nyte Life? Learn how to get started, RSVP to events, and make payment. Two paths: FetLife users and newcomers.">
+    <meta name="description" content="Ready to join The Nyte Life? Learn how to get started, RSVP to events, and connect with our hosts. Two paths: FetLife users and newcomers.">
     <meta name="keywords" content="how to join kink party, kink party RSVP, join kink community, lifestyle event sign up, kink party Long Island">
     <meta name="robots" content="index, follow">
     <meta name="author" content="The Nyte Life">
 
     <!-- Open Graph -->
     <meta property="og:title" content="How to Join | The Nyte Life">
-    <meta property="og:description" content="Ready to join The Nyte Life? Learn how to get started and make payment.">
+    <meta property="og:description" content="Ready to join The Nyte Life? Learn how to get started and connect with us.">
     <meta property="og:image" content="https://images.pexels.com/photos/30937363/pexels-photo-30937363.jpeg?auto=compress&w=1200&h=630&fit=crop">
     <meta property="og:url" content="https://thenytelife.com/join.html">
     <meta property="og:type" content="website">
@@ -30,20 +30,21 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-
     <style>
         .host-card {
             text-align: left;
-            padding: 2.5rem;
+            padding: 3rem;
             background: var(--card);
             border: 1px solid var(--border);
+            max-width: 900px;
+            margin: 0 auto 2rem;
         }
 
         .host-card i {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: var(--accent);
-            margin-bottom: 1.2rem;
-            display: block;
+            margin-bottom: 1.5rem;
+            opacity: 0.7;
         }
 
         .host-card h3 {
@@ -52,42 +53,68 @@
             margin-bottom: 1rem;
             font-weight: 400;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
         }
 
         .host-card p {
             color: var(--text-muted);
             font-size: 0.95rem;
             line-height: 1.8;
-            margin-bottom: 1.2rem;
-        }
-
-        .host-card a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .host-card a:hover {
-            color: var(--gold-dark);
+            margin-bottom: 1rem;
         }
 
         .host-card .btn-primary {
             color: var(--bg) !important;
         }
 
-        .host-grid {
+        .features-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            max-width: 900px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem 4rem;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.3rem;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .feature-content h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .feature-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
         @media (max-width: 768px) {
-            .host-grid {
+            .features-grid {
                 grid-template-columns: 1fr;
+                gap: 2.5rem;
             }
         }
     </style>
@@ -97,12 +124,11 @@
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
         <a href="index.html" class="nav-logo">THE <span>NYTE</span> LIFE</a>
-                                <ul class="nav-links" id="navLinks">
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="what-to-expect.html">What to Expect</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="join.html" class="nav-cta">Join Now</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -116,39 +142,124 @@
     <section class="page-hero">
         <div class="page-hero-content">
             <h1>How to <span class="gold">Join</span></h1>
-            <p>Two paths to The Nyte Life. Choose the one that works for you.</p>
+            <p>Your guide to getting started with The Nyte Life.</p>
         </div>
     </section>
 
-    <!-- TWO PATHS -->
+    <!-- HOW IT WORKS -->
     <section>
         <div class="section-header">
             <span class="overline">Getting Started</span>
-            <h2>Your Path to The Nyte Life</h2>
+            <h2>How It Works</h2>
+            <p>From RSVP to the party. Three simple steps.</p>
             <div class="gold-line"></div>
         </div>
-        <div class="host-grid">
-            <div class="host-card">
-                <i class="fas fa-users"></i>
-                <h3>Already on FetLife?</h3>
-                <p>Priority access is given to those with active FetLife accounts. Message us directly and we'll get you set up.</p>
-                <div style="margin-top: 1.5rem;">
-                    <a href="https://fetlife.com/Mr-Nyte" target="_blank" class="btn-primary" style="margin: 0.25rem;">
-                        <i class="fas fa-user"></i> Mr. Nyte
-                    </a>
-                    <a href="https://fetlife.com/DarkAngelj87" target="_blank" class="btn-primary" style="margin: 0.25rem;">
-                        <i class="fas fa-user"></i> Dark Angel
-                    </a>
+        <div class="host-card fade-in">
+            <h3>I. Reach Out</h3>
+            <p>Message us on FetLife or Telegram. Tell us a little about yourself and what you're looking for. We'll answer any questions you have.</p>
+        </div>
+        <div class="host-card fade-in">
+            <h3>II. Get Approved</h3>
+            <p>Once we've chatted, we'll add you to our vetted guest list. Every attendee is verified for the safety and comfort of the entire community.</p>
+        </div>
+        <div class="host-card fade-in">
+            <h3>III. Show Up</h3>
+            <p>You'll receive event details including date, time, location, and payment info. Dress to impress, bring your ID, and get ready for an incredible night.</p>
+        </div>
+    </section>
+
+    <!-- TWO WAYS TO CONNECT -->
+    <section style="background: var(--bg-alt);">
+        <div class="section-header">
+            <span class="overline">Connect With Us</span>
+            <h2>Two Ways to Get Started</h2>
+            <p>Choose whatever works best for you.</p>
+            <div class="gold-line"></div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>On FetLife?</h4>
+                    <p>Priority access goes to active FetLife members. Message our profiles directly and we'll get you set up for the next event.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://fetlife.com/Mr-Nyte" target="_blank" class="btn-primary" style="margin: 0.25rem; padding: 0.6rem 1.2rem; font-size: 0.8rem;">
+                            <i class="fas fa-user"></i> Mr. Nyte
+                        </a>
+                        <a href="https://fetlife.com/DarkAngelj87" target="_blank" class="btn-primary" style="margin: 0.25rem; padding: 0.6rem 1.2rem; font-size: 0.8rem;">
+                            <i class="fas fa-user"></i> Dark Angel
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="host-card">
-                <i class="fas fa-question-circle"></i>
-                <h3>New to This?</h3>
-                <p>No worries. We'll walk you through everything. Message Mr. Nyte on Telegram and we'll answer all your questions.</p>
-                <div style="margin-top: 1.5rem;">
-                    <a href="https://t.me/MrNyte" target="_blank" class="btn-primary">
-                        <i class="fab fa-telegram"></i> Message @MrNyte
-                    </a>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>New to This?</h4>
+                    <p>No FetLife? No problem. Message us on Telegram and we'll walk you through everything. No judgment, just good vibes.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://t.me/MrNyte" target="_blank" class="btn-primary" style="margin: 0.25rem; padding: 0.6rem 1.2rem; font-size: 0.8rem;">
+                            <i class="fab fa-telegram"></i> Message @MrNyte
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section>
+        <div class="section-header">
+            <span class="overline">Pricing</span>
+            <h2>Event Pricing</h2>
+            <p>Transparent. Simple. No hidden fees.</p>
+            <div class="gold-line"></div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-mars"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Single Males</h4>
+                    <p>$100 per event</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-venus"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Ladies</h4>
+                    <p>Always free. Every event.</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Couples</h4>
+                    <p>$50 per event</p>
+                </div>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Payment</h4>
+                    <p>CashApp or Zelle. Details sent after approval.</p>
                 </div>
             </div>
         </div>
@@ -195,7 +306,7 @@
                 <a href="https://fetlife.com/Mr-Nyte" target="_blank">FetLife: Mr-Nyte</a>
                 <a href="https://fetlife.com/DarkAngelj87" target="_blank">FetLife: DarkAngelJ87</a>
                 <a href="https://t.me/MrNyte" target="_blank">Telegram: @MrNyte</a>
-                <a href="contact.html">Contact</a>
+                <a href="join.html">How to Join</a>
             </div>
         </div>
         <div class="footer-bottom">
