@@ -365,10 +365,17 @@ section {
 .event-listing {
     background: var(--card);
     border: 1px solid var(--border);
-    padding: 3rem;
+    padding: 2.5rem;
     max-width: 900px;
     margin: 0 auto 2rem;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+    .event-listing {
+        padding: 1.5rem;
+        margin: 0 1rem 2rem;
+    }
 }
 
 .event-listing:hover {
