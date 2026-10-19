@@ -516,7 +516,7 @@ section {
 
 /* ===== FOOTER ===== */
 footer {
-    padding: 6rem 5% 2.5rem;
+    padding: 5rem 5% 3rem;
     background: var(--bg);
     border-top: 1px solid var(--border);
 }
@@ -571,6 +571,28 @@ footer {
     color: var(--accent);
 }
 
+.footer-contact {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--border);
+}
+.footer-contact li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    font-weight: 300;
+    padding: 0.4rem 0;
+}
+.footer-contact a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+.footer-contact a:hover,
+.footer-contact a:focus-visible {
+    text-decoration: underline;
+}
 .footer-bottom {
     text-align: center;
     padding-top: 2.5rem;
@@ -629,9 +651,16 @@ footer {
         font-size: 0.85rem;
         line-height: 1.6;
     }
-    .footer-brand a {
-        display: block;
-        padding: 0.3rem 0;
+    .footer-contact {
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .footer-contact li {
+        padding: 0.7rem 0;
+        font-size: 0.95rem;
+    }
+    .footer-col a {
+        padding: 0.75rem 0;
     }
     .page-hero {
         min-height: 30vh;
