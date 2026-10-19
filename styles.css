@@ -523,7 +523,7 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
     gap: 3rem;
     max-width: 1100px;
     margin: 0 auto 4rem;
@@ -573,9 +573,8 @@ footer {
 
 .footer-contact {
     list-style: none;
-    margin: 1rem 0 0;
-    padding: 1rem 0 0;
-    border-top: 1px solid var(--border);
+    margin: 0;
+    padding: 0;
 }
 .footer-contact li {
     font-size: 0.9rem;
@@ -650,10 +649,6 @@ footer {
     .footer-brand p {
         font-size: 0.85rem;
         line-height: 1.6;
-    }
-    .footer-contact {
-        margin-top: 1.25rem;
-        padding-top: 1.25rem;
     }
     .footer-contact li {
         padding: 0.7rem 0;
