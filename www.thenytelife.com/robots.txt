@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thenytelife.com/sitemap.xml
+Sitemap: https://www.thenytelife.com/sitemap.xml
