@@ -516,7 +516,7 @@ section {
 
 /* ===== FOOTER ===== */
 footer {
-    padding: 5rem 5% 3rem;
+    padding: 3.5rem 5% 2.5rem;
     background: var(--bg);
     border-top: 1px solid var(--border);
 }
@@ -526,19 +526,20 @@ footer {
     grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
     gap: 3rem;
     max-width: 1100px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 2.5rem;
     align-items: start;
 }
 
 .footer-brand h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1;
     color: var(--accent);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.18rem;
     margin-top: 0;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
 }
 
 .footer-brand p {
@@ -581,7 +582,7 @@ footer {
     line-height: 1.5;
     color: var(--text-muted);
     font-weight: 300;
-    padding: 0.4rem 0;
+    padding: 0;
 }
 .footer-contact a {
     color: var(--accent);
