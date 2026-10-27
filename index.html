@@ -281,6 +281,27 @@
             color: var(--gold-dark);
         }
 
+        .host-card a.more-about {
+            display: inline-block;
+            margin-top: 0.2rem;
+            padding: 0.55rem 1.2rem;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            background: transparent;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-size: 0.7rem;
+            font-weight: 500;
+            transition: all 0.4s ease;
+        }
+
+        .host-card a.more-about:hover {
+            background: var(--accent);
+            color: var(--bg);
+            box-shadow: 0 0 24px rgba(212, 175, 55, 0.35);
+        }
+
         .host-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -553,21 +574,21 @@
                 <h3>Mr. Nyte</h3>
                 <p style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.78rem; color: var(--accent); font-weight: 600; margin-top: -0.4rem;">Founder and Host</p>
                 <p style="margin-top: 1rem;"><a href="https://fetlife.com/Mr-Nyte" target="_blank" rel="noopener">FetLife: Mr-Nyte</a></p>
-                <p style="margin-top: 0.9rem;"><a href="about.html">More about us &rarr;</a></p>
+                <p style="margin-top: 0.9rem;"><a class="more-about" href="about.html">More about us &rarr;</a></p>
             </div>
             <div class="host-card fade-in">
                 <i class="fas fa-star"></i>
                 <h3>Stogalicious</h3>
                 <p style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.78rem; color: var(--accent); font-weight: 600; margin-top: -0.4rem;">Hostess</p>
                 <p style="margin-top: 1rem;"><a href="https://fetlife.com/Stogalicious" target="_blank" rel="noopener">FetLife: Stogalicious</a></p>
-                <p style="margin-top: 0.9rem;"><a href="about.html">More about us &rarr;</a></p>
+                <p style="margin-top: 0.9rem;"><a class="more-about" href="about.html">More about us &rarr;</a></p>
             </div>
             <div class="host-card fade-in">
                 <i class="fas fa-heart"></i>
                 <h3>Irish Pixey</h3>
                 <p style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.78rem; color: var(--accent); font-weight: 600; margin-top: -0.4rem;">Hostess</p>
                 <p style="margin-top: 1rem;"><a href="https://fetlife.com/irishpixey" target="_blank" rel="noopener">FetLife: irishpixey</a></p>
-                <p style="margin-top: 0.9rem;"><a href="about.html">More about us &rarr;</a></p>
+                <p style="margin-top: 0.9rem;"><a class="more-about" href="about.html">More about us &rarr;</a></p>
             </div>
         </div>
     </section>
